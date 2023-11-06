@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "tngbanner">
+        <nav>
+            <img src="myimages/africa (2).png" class="logo">
+        </nav>
+        <div id="sidenav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourdestinations.html">DESTINATIONS</a></li>
+                <li><a href="food.html">CUISINE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="menubtn">
+            <img src="myimages/menu.png" id = "menu">
+        </div>
+
+        <div class="hero">
+            <div class="content">
+                <h1>NgoroNgoro</h1>
+                <h3>Where Nature and Culture Converge!</h3>
+                <a href="#this"><span></span>Explore</a>
+            </div>
+        </div>
+
+
+    </div>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+            sidenav.style.right = "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = "myimages/close.png";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = "myimages/menu.png";
+                }
+            }
+        </script>
+    </section>
+
+    <section class="About Us">
+        <section id = "this">
+        </section>
+        <div class="heading">
+            <h1>NgoroNgoro Crater</h1>
+            <p>Ngorongoro Conservation Area, located in Tanzania, East Africa, encompasses the Ngorongoro Crater, a UNESCO World Heritage Site famous for its breathtaking landscapes and rich wildlife. This area is a major draw for tourists seeking extraordinary safari experiences and a chance to witness abundant wildlife in its natural habitat.</p>
+        </div>
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/ngorongoro1.webp">
+                </div>
+                <div class="about-content">
+                    <h2><span style="font-family: cursive;">Why Ngorongoro?</span></h2>
+                    <p>Ngorongoro Conservation Area is a destination that promises an unforgettable blend of natural beauty, incredible wildlife encounters, and cultural immersion. It is an ideal place for those who seek to explore the wonders of the African wilderness and gain a deeper understanding of the delicate balance between humans and nature. Whether you're a nature enthusiast, an adventure seeker, or a culture explorer, Ngorongoro has something exceptional to offer every traveler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Faq">
+        <div class="heading">
+            <h1><span style="font-family: 'Marck Script', cursive ;">About NgoroNgoro</span></h1>
+            <p>Ngorongoro Crater is regarded by many as the 8th wonders of the world. Its crater wall is of about 600 meter and it has a floor about 300 square kilometers, the crater floor has a big number of resident animals with exception of few that migrates in and out of the crater like wildebeest and zebra. Ngorongoro crater is among few areas in the World where black rhino are leaving in their natural habitat. You may expect to spot from hippos, zebra, wildebeest, topi, buffalo, elephant, lion, cheetah, leopard, hyenas and other species..</p>
+        </div>
+
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/ngorongoro4.webp">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="About Us">
+        
+        <div class="container">
+            <div class="about">
+                <div class="about-content">
+                    <h2> Why Book With Us</h2>
+                    <p>This tour <span style="font-weight: bolder;">Somewherein Africa</span> will take you to Ngorongoro Crater, the world’s biggest intact caldera and home to 30,000 wild animals, including leopards, elephants, lions, and rare black rhinos. Grab the chance for a game drive without any worries about transportation from Arusha on this small-group excursion.Board a 4X4 to see flamingo-filled lakes and spot animals roaming the plains, all the while gaining insight into Ngorongoro wildlife and geology from your driver guide. A picnic by a hippo pool and round-trip transfers from Arusha are included.</p>
+                    <a href="" class="read-more">View Related Packages</a>
+                    <a href="" class="read-more">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "footer">
+        <div class="title-text">
+            <p>Have you spotted something that catches your interest?</p>
+            <h3>Feel free to reach out to us with your inquiries</h3>
+            <a href="" class="newsletter">Subscribe To Our News Letter</a>
+        </div>
+        <div class="footer-row">
+            <div class="footer-right">
+                <h1>Destinations</h1>
+                <p><a href="tanzania.html">Tanzania</a></p>
+                <p><a href="kenya.html">Kenya</a></p>
+                <p><a href="uganda.html">Uganda</a></p>
+                <p><a href="">Rwanda</a></p>
+                <p><a href="">Zanzibar</a></p>
+            </div>
+            <div class="footer-left">
+                <img src="myimagesafrica.png" class="footer-img">
+                <h1>Get In Touch</h1>
+                <p>info@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>nicoleNL@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>+255755769498<i class="fa fa-phone" aria-hidden="true"></i></p>
+            </div>
+            <div class="footer-right">
+                <h1>HOME</h1>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Expeditions</a></p>
+                <p><a href="">Accommodation</a></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <p>Thank You For Visiting Our Website</p>
+        </div>
+    </section>
+
+</body>
+</html>

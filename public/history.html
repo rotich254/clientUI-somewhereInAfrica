@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "hsbanner">
+        <nav>
+            <img src="myimages/africa (2).png" class="logo">
+        </nav>
+        <div id="sidenav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourdestinations.html">DESTINATIONS</a></li>
+                <li><a href="food.html">CUISINE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="menubtn">
+            <img src="myimages/menu.png" id = "menu">
+        </div>
+
+        <div class="hero">
+            <div class="content">
+                <h1>Historical Sites</h1>
+                <h3> The echoes of ancient civilization</h3>
+                <a href="#this"><span></span>Explore</a>
+            </div>
+        </div>
+
+
+    </div>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+            sidenav.style.right = "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = "myimages/close.png";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = "myimages/menu.png";
+                }
+            }
+        </script>
+    </section>
+
+    <section class="About Us">
+        <section id = "this">
+        </section>
+        <div class="heading">
+            <h1>Historical Sites</h1>
+            <p>Historical sites in Kenya, Uganda, Tanzania, and Rwanda offer a rich tapestry of cultural and archaeological heritage. From Kenya's Great Rift Valley and Lamu Old Town to Uganda's Kasubi Tombs, Tanzania's Kilwa Kisiwani, and Rwanda's Kigali Genocide Memorial, these sites reflect the diverse histories and traditions of East Africa. Exploring these locations provides valuable insights into the region's past and cultural legacies</p>
+        </div>
+    </section>
+
+    <section class = "facilities1">
+        <h1>Tanzania & Zanzibar</h1>
+        <p>These  are the renowned historical sites in Tanzania</p>
+
+        <div class="roww">
+            <div class="facilities1-col">
+                <img src="myimages/stonetown3.jpg">
+                <h3>Zanzibar Stone Town</h3>
+                <p>Winding streets adorned with intricately carved wooden doors, showcasing the diverse cultural influences of Swahili, Persian, Indian, and European heritage</p>
+            </div>
+            <div class="facilities1-col">
+                <img src="myimages/kilwa3.png">
+                <h3>Kilwa Kisiwani</h3>
+                <p>Stone Town, in Zanzibar, is a maze of narrow streets, historic buildings, and ornate wooden doors, reflecting the island's diverse history of Swahili, Persian, Indian, and European influences.</p>
+            </div>
+            <div class="facilities1-col">
+                <img src="myimages/duvai.jpg">
+                <h3>Olduvai Gorge</h3>
+                <p>Located in northern Tanzania, Olduvai Gorge is often called the "Cradle of Mankind" and has been the site of numerous archaeological discoveries related to early human ancestors</p>
+            </div>
+        </div>
+    </section>
+    <section class = "facilities1">
+        <h1>Kenya</h1>
+        <p>These  are the renowned historical sites in Kenya</p>
+
+        <div class="roww">
+            <div class="facilities1-col">
+                <img src="myimages/lamu1.jpg">
+                <h3>Lamu Old Town</h3>
+                <p>Lamu's well-preserved old town is a UNESCO World Heritage Site and a center of Swahili culture, featuring intricate architecture, narrow streets, and historical significance.</p>
+            </div>
+            <div class="facilities1-col">
+                <img src="myimages/fortjesus1.jpg">
+                <h3>Fort Jesus (Mombasa)</h3>
+                <p>Fort Jesus in Mombasa is a 16th-century Portuguese fort that has witnessed a complex history. It is now a museum offering a glimpse into the region's colonial past.</p>
+            </div>
+            <div class="facilities1-col">
+                <img src="myimages/riftv1.jpg">
+                <h3>Great Rift Valley</h3>
+                <p> Kenya's portion of the Great Rift Valley is an archaeological treasure trove, featuring ancient human fossil sites like Olorgesailie, Hyrax Hill, and Koobi Fora. These sites have provided invaluable insights into human evolution</p>
+            </div>
+        </div>
+    </section>
+    <section class = "facilities1">
+        <h1>Uganda</h1>
+        <p>These  are the renowned historical sites in Uganda</p>
+        <div class="roww">
+            <div class="facilities1-col">
+                <img src="myimages/kasubi2.jpg">
+                <h3>Kasubi Tombs (Kampala)</h3>
+                <p>The Kasubi Tombs in Kampala are a UNESCO World Heritage Site and the burial place of Buganda kings. This cultural site is a window into the traditions and history of the Baganda people.</p>
+            </div>
+            <div class="facilities1-col">
+                <img src="myimages/jinja1.jpg">
+                <h3>Jinja Source of the Nile</h3>
+                <p>Jinja, where the Nile River begins its journey, has historical significance and is a place of natural beauty. Visitors can explore the source of the world's longest river</p>
+            </div>
+            <div class="facilities1-col">
+                <img src="myimages/namugongo2.jpg">
+                <h3>The Uganda Martyrs Shrine</h3>
+                <p>Beyond its religious significance, the shrine is an important cultural heritage site, preserving the memory of the Uganda Martyrs and their role in shaping the country's history.</p>
+            </div>
+        </div>
+        <a href="#"><span></span>Related Package</a>
+    </section>
+
+
+
+    <section id = "footer">
+        <div class="title-text">
+            <p>Have you spotted something that catches your interest?</p>
+            <h3>Feel free to reach out to us with your inquiries</h3>
+            <a href="" class="newsletter">Subscribe To Our News Letter</a>
+        </div>
+        <div class="footer-row">
+            <div class="footer-right">
+                <h1>Destinations</h1>
+                <p><a href="tanzania.html">Tanzania</a></p>
+                <p><a href="kenya.html">Kenya</a></p>
+                <p><a href="uganda.html">Uganda</a></p>
+                <p><a href="">Rwanda</a></p>
+                <p><a href="">Zanzibar</a></p>
+            </div>
+            <div class="footer-left">
+                <img src="myimagesafrica.png" class="footer-img">
+                <h1>Get In Touch</h1>
+                <p>info@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>nicoleNL@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>+255755769498<i class="fa fa-phone" aria-hidden="true"></i></p>
+            </div>
+            <div class="footer-right">
+                <h1>HOME</h1>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Expeditions</a></p>
+                <p><a href="">Accommodation</a></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <p>Thank You For Visiting Our Website</p>
+        </div>
+    </section>
+
+</body>
+</html>

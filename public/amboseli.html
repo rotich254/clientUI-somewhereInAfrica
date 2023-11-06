@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "kambanner">
+        <nav>
+            <img src="myimages/africa (2).png" class="logo">
+        </nav>
+        <div id="sidenav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourdestinations.html">DESTINATIONS</a></li>
+                <li><a href="food.html">CUISINE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="menubtn">
+            <img src="myimages/menu.png" id = "menu">
+        </div>
+
+        <div class="hero">
+            <div class="content">
+                <h1>The Amboseli</h1>
+                <h3>In the shadow of Mount Kilimanjaro</h3>
+                <a href="#"><span></span>Explore</a>
+            </div>
+        </div>
+
+
+    </div>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+            sidenav.style.right = "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = "myimages/close.png";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = "myimages/menu.png";
+                }
+            }
+        </script>
+    </section>
+
+    <section class="About Us">
+        <div class="heading">
+            <h1>Amboseli National Park</h1>
+            <p>
+            Amboseli National Park, situated in southern Kenya, is renowned for its awe-inspiring landscapes, abundant wildlife, and the iconic presence of Mount Kilimanjaro. This introduction encapsulates the park's uniqueness, emphasizing its role as a sanctuary for diverse species, particularly elephants, and a place where travelers can experience the essence of an authentic African safari. Amboseli's captivating scenery and cultural interactions with the Maasai people make it a must-visit destination for nature enthusiasts and those seeking a genuine wilderness experience</p>
+        </div>
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/amboseli1.jpg">
+                </div>
+                <div class="about-content">
+                    <h2><span style="font-family: cursive;">Thinking about the enchanting beauty of the Amboseli?</span></h2>
+                    <p>Amboseli National Park, often called the "Land of Giants" for its iconic elephant herds, is a captivating destination that beckons travelers to experience the authentic essence of Africa. From its awe-inspiring landscapes to its rich cultural tapestry, Amboseli is a world where the untamed and the sublime harmoniously coexist.Amboseli's most defining feature is its majestic backdrop - the snow-capped peak of Mount Kilimanjaro. As Africa's highest mountain, it looms over the park, providing a breathtaking canvas for every adventure. The first rays of dawn illuminate Kilimanjaro, casting a golden halo over the savannah. As the day progresses, the mountain's presence, whether shrouded in clouds or bathed in sunlight, continues to inspire awe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Faq">
+        <div class="heading">
+            <h1><span style="font-family: 'Marck Script', cursive ;">A Symphony of Wildlife</span></h1>
+            <p>Amboseli is celebrated for its resident elephant population, which has become an emblem of successful conservation efforts in Kenya. These gentle giants move gracefully across the savannah, their intricate social interactions and matriarchal society providing endless fascination. Their presence alone is enough to justify a visit, and observing them in their natural habitat is a privilege few experiences can match.But Amboseli's charms extend beyond elephants. The park is home to an array of fascinating creatures, including hippos that frolic in the swamps, hyenas that prowl the night, and a vast diversity of bird species that paint the skies with their vibrant plumage. A game drive through Amboseli is a thrilling journey of discovery, a safari where every moment holds the promise of an extraordinary encounter with nature.</p>
+        </div>
+
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/amboseli4.jpg">
+                </div>
+                <div class="about-content">
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: 100;">Cultural Encounters:</span> </h2>
+                    <p>The Maasai people, with their distinctive red robes and beadwork, have shared the land with wildlife for generations. Amboseli provides an opportunity for cultural immersion, as visitors can engage with the Maasai and learn about their traditional way of life. Maasai villages in the vicinity welcome visitors, offering a glimpse into the ancient practices and customs that have sustained their people for centuries</p>
+                   
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="About Us">
+        
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/amboseli6.jpg">
+                </div>
+                <div class="about-content">
+                    <h2>Tour With Us</h2>
+                    <p>Booking a safari experience with <span style="font-weight: bolder;">Somewherein Africa</span> To The Amboseli National Park promises an unforgettable adventure in one of Kenya's most iconic wildlife destinations. With their expertise and tailored itineraries, you can expect a seamless and enriching journey to discover the beauty and wildlife of Kenya.</p>
+                    <a href="" class="read-more">View Related Packages</a>
+                    <a href="" class="read-more">Book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "footer">
+        <div class="title-text">
+            <p>Have you spotted something that catches your interest?</p>
+            <h3>Feel free to reach out to us with your inquiries</h3>
+            <a href="" class="newsletter">Subscribe To Our News Letter</a>
+        </div>
+        <div class="footer-row">
+            <div class="footer-right">
+                <h1>Destinations</h1>
+                <p><a href="tanzania.html">Tanzania</a></p>
+                <p><a href="kenya.html">Kenya</a></p>
+                <p><a href="uganda.html">Uganda</a></p>
+                <p><a href="">Rwanda</a></p>
+                <p><a href="">Zanzibar</a></p>
+            </div>
+            <div class="footer-left">
+                <img src="myimagesafrica.png" class="footer-img">
+                <h1>Get In Touch</h1>
+                <p>info@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>nicoleNL@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>+255755769498<i class="fa fa-phone" aria-hidden="true"></i></p>
+            </div>
+            <div class="footer-right">
+                <h1>HOME</h1>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Expeditions</a></p>
+                <p><a href="">Accommodation</a></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <p>Thank You For Visiting Our Website</p>
+        </div>
+    </section>
+
+</body>
+</html>

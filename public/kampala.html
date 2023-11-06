@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "ukmbanner">
+        <nav>
+            <img src="myimages/africa (2).png" class="logo">
+        </nav>
+        <div id="sidenav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourdestinations.html">DESTINATIONS</a></li>
+                <li><a href="food.html">CUISINE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="menubtn">
+            <img src="myimages/menu.png" id = "menu">
+        </div>
+
+        <div class="hero">
+            <div class="content">
+                <h1>Kampala Uganda</h1>
+                <h3>where every street is a canvas of culture</h3>
+                <a href="#sliding"><span></span>Explore</a>
+            </div>
+        </div>
+
+
+    </div>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+            sidenav.style.right = "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = "myimages/close.png";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = "myimages/menu.png";
+                }
+            }
+        </script>
+    </section>
+
+    <section class="About Us">
+        <div class="heading">
+            <section id = "sliding"></section>
+            <h1>Kampala City</h1>
+            <p>Kampala is a city that thrives on its diversity, embracing its history while forging ahead into the future. The result is a unique urban tapestry that is both captivating and ever-evolving, making Kampala a destination unlike no other</p>
+        </div>
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/kampala4.jpg">
+                </div>
+                <div class="about-content">
+                    <h2><span style="font-family: cursive;">Experience the kaleidoscope of life in Kampala</span></h2>
+                    <p>Kampala, Uganda's capital, is a city of cultural diversity and historical significance, where the past merges seamlessly with modern developments. Its streets are adorned with colorful street art, and its bustling markets offer a vibrant sensory experience. The city's warm and welcoming people add a special charm, making visitors feel at home. Kampala's rich traditions, festivals, and culinary delights provide a kaleidoscope of experiences, making it a must-visit destination for those seeking an authentic taste of Uganda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Faq">
+        <div class="heading">
+            <h1><span style="font-family: 'Marck Script', cursive ;"> A City of Culinary Fusion</span></h1>
+            <p>The city's culinary scene is a vibrant mosaic of flavors, with street vendors, local eateries, and international restaurants offering a wide array of dishes. The fusion of traditional Ugandan cuisine with global influences adds another layer of diversity to Kampala's urban fabric.</p>
+        </div>
+
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/Kampala3.jpg">
+                </div>
+                <div class="about-content">
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: 100;">Cultural Encounters</span> </h2>
+                    <p> Kampala offers a rich array of cultural encounters for tourists, encompassing festivals, culinary delights, traditional markets, historical sites, local artisans, immersive community experiences, language, storytelling, and religious exploration. These experiences not only provide a deeper understanding of Uganda's culture but also foster meaningful connections between tourists and the warm and welcoming people of Kampala</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/kampala4.jpg">
+                </div>
+                <div class="about-content">
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: 100;">Street Art and Expression</span> </h2>
+                    <p> Street art in Kampala is a dynamic and essential component of the city's urban landscape. It serves as a celebration of culture, a platform for political and social commentary, and a means of engaging local communities. This vibrant art form has become a tourist attraction, transforming previously overlooked areas into colorful expressions of identity and pride. While it's accessible to all, it's not without controversy, sparking discussions about art versus vandalism. Ultimately, street art in Kampala reflects the city's rich cultural diversity, challenges societal norms, and plays a crucial role in shaping its identity.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about">
+                <div class="about-content">
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: 100;">Nightlife and Entertainment</span> </h2>
+                    <p>Kampala's nightlife and entertainment scene pulsates with energy and diversity, making it a city that truly comes alive after the sun sets. From vibrant nightclubs that throb to the rhythms of Afrobeat and contemporary music, to cozy jazz lounges and trendy bars, there's a venue to cater to every taste. Night owls can dance the night away to local and international tunes, savor craft cocktails, and experience the warmth and friendliness of the Ugandan people. In addition to the music and dance scene, the city boasts a flourishing theater and performing arts community, offering visitors a chance to witness captivating plays, cultural performances, and live shows. Kampala's bustling streets remain animated into the late hours, making it a dynamic urban center for those seeking a memorable and electrifying nightlife experience in the heart of Uganda</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="About Us">
+        
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/kamapalaMain.jpg">
+                </div>
+                <div class="about-content">
+                    <h2>Tour With Us</h2>
+                    <p>Booking a safari experience with <span style="font-weight: bolder;">Somewherein Africa</span> To Kampala Uganda promises an unforgettable adventure in one of Uganda's most iconic Urban destinations. With our expertise and tailored itineraries, you can expect a seamless and enriching journey to discover the beauty and wildlife of Uganda.</p>
+                    <a href="" class="read-more">View Related Packages</a>
+                    <a href="" class="read-more">Book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "footer">
+        <div class="title-text">
+            <p>Have you spotted something that catches your interest?</p>
+            <h3>Feel free to reach out to us with your inquiries</h3>
+            <a href="" class="newsletter">Subscribe To Our News Letter</a>
+        </div>
+        <div class="footer-row">
+            <div class="footer-right">
+                <h1>Destinations</h1>
+                <p><a href="tanzania.html">Tanzania</a></p>
+                <p><a href="kenya.html">Kenya</a></p>
+                <p><a href="uganda.html">Uganda</a></p>
+                <p><a href="">Rwanda</a></p>
+                <p><a href="">Zanzibar</a></p>
+            </div>
+            <div class="footer-left">
+                <img src="myimagesafrica.png" class="footer-img">
+                <h1>Get In Touch</h1>
+                <p>info@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>nicoleNL@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>+255755769498<i class="fa fa-phone" aria-hidden="true"></i></p>
+            </div>
+            <div class="footer-right">
+                <h1>HOME</h1>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Expeditions</a></p>
+                <p><a href="">Accommodation</a></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <p>Thank You For Visiting Our Website</p>
+        </div>
+    </section>
+
+</body>
+</html>

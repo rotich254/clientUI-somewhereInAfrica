@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tanzaniastyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"  type = "text/css" href="mystyle/glider.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "tbanner">
+        <nav>
+            <img src="myimages/africa (2).png" class="logo">
+        </nav>
+        <div id="sidenav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourdestinations.html">DESTINATIONS</a></li>
+                <li><a href="food.html">CUISINE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="iwrapper">
+            <div class="static-text">Tanzania Offers:</div>
+            <ul class = "dynamic-txts">
+                <li><span style="font-family:  'Marck Script', cursive ;">Safari Tours</span></li>
+                <li><span style="font-family:  'Marck Script', cursive ;">Zanzibar Archipelago</span></li>
+                <li><span style="font-family:  'Marck Script', cursive ;">Cultural Tourism</span></li>
+                <li><span style="font-family:  'Marck Script', cursive ;">Marine Activities</span></li>
+            </ul>
+        </div>
+        <div id="menubtn">
+            <img src="myimages/menu.png" id = "menu">
+        </div>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+            sidenav.style.right = "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = "myimages/close.png";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = "myimages/menu.png";
+                }
+            }
+        </script>
+    </section>
+
+    <section class="p-slider">
+        <div class="heading">
+            <h1><span style="font-family: 'Marck Script', cursive ;">Tanzania's Ecological Marvels</span></h1>
+            <p>Are you curious about Tanzania? This East African gem is a traveler's dream, boasting stunning landscapes, diverse wildlife, and rich cultural experiences. Dive into an untamed adventure that will leave you with memories to last a lifetime..</p>
+        </div>
+
+            <div class="slider-btns">
+                <button aria-label="Previous" class="glider-prev">
+                    <
+                </button>
+                <button aria-label="Next" class="glider-next">
+                   <span></span>
+                </button>
+            </div>
+            <div class="glider-contain">
+                <div class="glider">
+                    <div class="product-box">
+                        <div class="p-img-container">
+                            <div class="p-img">
+                                <a href="#">
+                                    <img src="myimages/tiger.jpg" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-box-text">
+                            <div class="product-category">
+                                <span>Safari</span>
+                            </div>
+                            <a href="tarangire.html" class="product-title">
+                                Tarangire National Park
+                            </a>
+                            <div class="visit-page">
+                                <span class = "interested">Interested</span>
+                                <a href="tarangire.html" class="p-interested">Visit</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="product-box">
+                        <div class="p-img-container">
+                            <div class="p-img">
+                                <a href="#">
+                                    <img src="myimages/ngorongorocrater3.webp" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-box-text">
+                            <div class="product-category">
+                                <span>Safari</span>
+                            </div>
+                            <a href="ngorongor.html" class="product-title">
+                                Ngorongoro Crater, the world’s biggest intact calder.
+                            </a>
+                            <div class="visit-page">
+                                <span class = "interested">Interested</span>
+                                <a href="ngorongor.html" class="p-interested">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="p-img-container">
+                            <div class="p-img">
+                                <a href="#">
+                                    <img src="myimages/materuni3.webp" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-box-text">
+                            <div class="product-category">
+                                <span>Safari</span>
+                            </div>
+                            <a href="materuni.html" class="product-title">
+                                Materuni Water Falls
+                            </a>
+                            <div class="visit-page">
+                                <span class = "interested">Interested</span>
+                                <a href="materuni.html" class="p-interested">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="p-img-container">
+                            <div class="p-img">
+                                <a href="#">
+                                    <img src="myimages/lakemanyara1.webp" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-box-text">
+                            <div class="product-category">
+                                <span>Safari</span>
+                            </div>
+                            <a href="manyara.html" class="product-title">
+                                Lake Manyara
+                            </a>
+                            <div class="visit-page">
+                                <span class = "interested">Interested</span>
+                                <a href="manyara.html" class="p-interested">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="p-img-container">
+                            <div class="p-img">
+                                <a href="#">
+                                    <img src="myimages/kikuletwa1.webp" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-box-text">
+                            <div class="product-category">
+                                <span>Safari</span>
+                            </div>
+                            <a href="kikuletwa.html" class="product-title">
+                                Kikuletwa Hot Springs
+                            </a>
+                            <div class="visit-page">
+                                <span class = "interested">Interested</span>
+                                <a href="kikuletwa.html" class="p-interested">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="p-img-container">
+                            <div class="p-img">
+                                <a href="#">
+                                    <img src="myimages/arusha2.webp" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-box-text">
+                            <div class="product-category">
+                                <span>Safari</span>
+                            </div>
+                            <a href="kikuletwa.html" class="product-title">
+                                Arusha National Park
+                            </a>
+                            <div class="visit-page">
+                                <span class = "interested">Interested</span>
+                                <a href="arushapark.html" class="p-interested">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+    </section>
+
+    <section id = "Accommodations">
+
+        <div class="heading">
+            <h1><span style="font-family: 'Marck Script', cursive ;">Tanzania Accommodations</span></h1>
+            <p>Tanzania offers diverse accommodation options to suit the preferences and budgets of travelers. Safari lodges and tented camps situated within the country's national parks and conservation areas provide an immersive wildlife experience, often with luxurious amenities. Zanzibar, an island off Tanzania's coast, offers exquisite beachfront resorts with stunning ocean views. In cities like Arusha.</p>
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <img  class = "card-image" src ="myimages/arushacofeelodge1.jpg" alt="Arusha Lodge">
+                    <div class="card-content">
+                        <h1 class = "Card-header">Arusha Coffee Lodge</h1>
+                        <p class = card-text>
+                            The Manor at Ngorongoro is a 1500-acre coffee estate adjacent to the Ngorongoro National Park. It offers warm hospitality and beautiful accommodation.The elegant Cape-Dutch style manor has 10 guest cottages classically decorated with a European flavor. Each room has a private sun terrace, fireplace, rainfall shower and Victorian ball and claw bath. Small groups can book neighboring cottages or simply book the three-bedroom cottage.
+                        </p>
+                        <button class = "card-btn">Visit <span>&rarr; </span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img  class = "card-image" src ="myimages/chemchem lodge.jpg" alt="chem chem">
+                    <div class="card-content">
+                        <h1 class = "Card-header"> Chem Chem Lodge</h1>
+                        <p class = card-text>
+                            Chem Chem Lodge is situated within a privileged Wildlife Management Area between Tarangire National Park and Lake Manyara known as the Burunge Wildlife Management Area. The Lodge itself can be found nestled on the picturesque western side of the wildlife concession and consists of eight secluded tent-style suites with an opulent main Lodge house, all evoking the spirit of a vintage safari lodge.
+                        </p>
+                        <button class = "card-btn">Visit <span>&rarr; </span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img  class = "card-image" src ="myimages/mountmeruhotel.jpg " alt="Mount Meru">
+                    <div class="card-content">
+                        <h1 class = "Card-header">Mount Meru Hotel</h1>
+                        <p class = card-text>
+                            It is a loyalty programme like no other, offering recognition, hotel benefits and amazing experiences. All you have to do, is use any one of our facilities (Rooms, restaurants, lounges) and earn loyalty points.By booking directly : we are pleased to guarantee you the best rates with added benefits. Additionally, take advantage of further individual benefits and rewards our hotel is offering.
+                        </p>
+                        <button class = "card-btn">Visit <span>&rarr; </span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section id="Faq">
+        <div class="heading">
+            <h1><span style="font-family: 'Marck Script', cursive ;">FAQ's About Tanzania</span></h1>
+            <p> As you plan your journey to this East African gem, you might have questions about what to expect, where to go, and how to make the most of your visit. In this FAQ guide, we've gathered answers to common inquiries that will help you explore Tanzania with confidence and excitement.</p>
+        </div>
+
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/grumeti.jpg">
+                </div>
+                <div class="about-content">
+                    <h2><span style= "font-family: 'Marck Script', cursive;">1.What is the best time to visit Tanzania and Zanzibar?</span> </h2>
+                    <p>The best time for a safari in Tanzania and Zanzibar depends on the specific parks and activities you plan to engage in. Generally, the dry season from June to October is popular for wildlife viewing in Tanzania, while the months of December to February offer pleasant weather and are suitable for beach activities in Zanzibar. However, it's important to note that Tanzania and Zanzibar have year-round safari and beach options, so it's best to consult with your tour operator based on your preferences.<a href="ourcalendar.html">Check our  travel guide for more</a></p>
+    
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: bolder;">2.What are the popular Parks in Tanzania for Safaris</span> </h2>
+                    <p>Tanzania is renowned for its national parks, offering diverse wildlife and stunning landscapes. Some popular parks for safaris include Serengeti National Park, Ngorongoro Conservation Area, Tarangire National Park, Lake Manyara National Park, Selous Game Reserve, and Ruaha National Park. Each park offers unique experiences and wildlife encounters.</p>
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: bolder;">3.Can I combine a Safari in Tanzania and a beach vacation in Zanzibar?</span> </h2>
+                    <p>Absolutely! Many visitors choose to combine a safari in Tanzania with a beach vacation in Zanzibar. After an exciting wildlife adventure, you can relax and unwind on the pristine beaches of Zanzibar, indulge in water sports, explore the historic Stone Town, and enjoy the rich cultural heritage of the island.</p>
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: bolder;">4.What Wildlife can I expect to see on a Safari?</span> </h2>
+                    <p>Tanzania is home to a wide array of wildlife. On safaris, you have the opportunity to spot the Big Five (elephant, lion, buffalo, leopard, and rhinoceros), as well as other animals such as giraffes, zebras, wildebeests, cheetahs, hippos, crocodiles, and various antelope species. The Serengeti is renowned for its annual wildebeest migration, considered one of the most impressive wildlife spectacles in the world.</p>
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: bolder;">5.Do I need visa to visit Tanzania and Zanzibar?</span> </h2>
+                    <p>Yes, most visitors to Tanzania and Zanzibar require a visa. The type of visa and the application process may vary based on your nationality and the duration of your stay. It's recommended to check with the Tanzanian embassies or consulates in your country or consult with a travel agent to ensure you have the necessary visa documentation before your trip.</p>
+                    <h2><span style= "font-family: 'Marck Script', cursive ; font-weight: bolder;">6.Are Safaris and Beach activities in Zanzibar suitable for families?</span> </h2>
+                    <p>Yes, both safaris in Tanzania and beach activities in Zanzibar can be enjoyable for families. There are family-friendly lodges and resorts that cater to the needs of children, and safari guides are experienced in providing educational and engaging experiences for young visitors. Zanzibar's beaches offer safe swimming areas and various water activities suitable for all ages.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id = "footer">
+        <div class="title-text">
+            <p>Have you spotted something that catches your interest?</p>
+            <h3>Feel free to reach out to us with your inquiries</h3>
+            <a href="" class="newsletter">Subscribe To Our News Letter</a>
+        </div>
+        <div class="footer-row">
+            <div class="footer-right">
+                <h1>Destinations</h1>
+
+                <p><a href="tanzania.html">Tanzania</a></p>
+                <p><a href="kenya.html">Kenya</a></p>
+                <p><a href="uganda.html">Uganda</a></p>
+                <p><a href="#">Rwanda</a></p>
+                <p><a href="">Zanzibar</a></p>
+            </div>
+            <div class="footer-left">
+                <img src="myimages/africa.png" class="footer-img">
+                <h1>Get In Touch</h1>
+                <p>info@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>nicoleNL@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>+255755769498<i class="fa fa-phone" aria-hidden="true"></i></p>
+            </div>
+            <div class="footer-right">
+                <h1>HOME</h1>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Expeditions</a></p>
+                <p><a href="">Accommodation</a></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <p>Thank You For Visiting Our Website</p>
+        </div>
+    </section>
+
+
+    <script src="js/glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+  slidesToShow: 4,
+  dots: '#dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 1200,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 4,
+        slidesToScroll: 2,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 304,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 0,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+    </script>
+</body>
+</html>

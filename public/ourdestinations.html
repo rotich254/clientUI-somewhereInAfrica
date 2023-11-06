@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id = "banner">
+        <nav>
+            <img src="myimages/africa (2).png" class="logo">
+        </nav>
+        <div id="sidenav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourdestinations.html">DESTINATIONS</a></li>
+                <li><a href="food.html">CUISINE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Our Destinations</h1>
+            <a href="#sliding"><span></span>Where To Go</a>
+            <a href="planning.html"><span></span>Plan your Journey</a> 
+        </div>
+        <div id="menubtn">
+            <img src="myimages/menu.png" id = "menu">
+        </div>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+            sidenav.style.right = "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = "myimages/close.png";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = "myimages/menu.png";
+                }
+            }
+        </script>
+    </section>
+    <section id = "sliding">
+    </section>
+    <section id ="AboutUs">
+        <div class="heading">
+            <h1>Where To Go</h1>
+            <p>Let Somewherein Africa be your trusted companion on your journey to discover the magic of this incredible continent.  With our expert guides, carefully curated itineraries, and personalized service, we ensure a seamless and authentic experience that allows you to explore Africa's hidden gems and iconic destinations.</p>
+        </div>
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="myimages/destination6.jpg">
+                </div>
+                <div class="about-content">
+                    <h2>Top Destinations</h2>
+                    <h3>  <span style ="font-family: 'Kaushan Script', cursive; color: burlywood;">"If I have ever seen magic, it has been in Africa."</span> – Ernest Hemingway</h3>
+                    <p>Ernest Hemingway's profound statement about the magic of Africa is a timeless testament to the wonder that East Africa holds. From its untamed wilderness to its vibrant cultures and unique wildlife encounters, the region is a treasure trove of experiences waiting to be discovered. As you plan your next adventure, consider the magic of East Africa – a land where the beauty of nature and the warmth of its people come together to create an unforgettable journey. Come and witness the enchanting magic of East Africa for yourself, and let its allure inspire your own adventures and explorations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "destinations">
+            <h1>Favorite Places To Visit.</h1>
+            <p>Discover the East Africa's most beloved destinations with our handpicked selection</p>
+
+            <div class="row">
+                <div class="destinations-col">
+                    <img src="myimages/TanzanianGirrafe.jpg">
+                    <h3> <span style = "font-size:30px;font-family:  'Kaushan Script', cursive; color: burlywood;">Tanzania & Zanzibar Island</span></h3>
+                    <p>Tanzania is known for its breathtaking natural wonders, including the Serengeti, Mount Kilimanjaro, and Zanzibar's pristine beaches, offering diverse safari and outdoor adventure opportunities.</p>
+                    <a href="tanzania.html" class="read-more">Explore Tanzania</a>
+                </div>
+                <div class="destinations-col">
+                    <img src="myimages/flamingo.png">
+                    <h3> <span style = "font-size:30px;font-family:  'Kaushan Script', cursive; color: burlywood;">Kenya</span></h3>
+                    <p>Tourism in Kenya is characterized by its stunning wildlife, diverse landscapes, and vibrant cultural experiences, making it a popular destination for safaris, beach vacations, and cultural exploration.</p>
+                    <a href="kenya.html" class="read-more">Explore Kenya</a>
+                </div>
+                <div class="destinations-col">
+                    <img src="myimages/mwenyaloge.jpg">
+                    <h3> <span style = "font-size:30px;font-family:  'Kaushan Script', cursive; color: burlywood;">Uganda</span></h3>
+                    <p>Uganda's tourism thrives on its abundant wildlife, lush landscapes, and opportunities for gorilla trekking, attracting nature enthusiasts and adventure seekers.</p>
+                    <a href="uganda.html" class="read-more">Explore Uganda</a>
+                </div>
+            </div>
+    </section>
+    <section id = "footer">
+        <div class="title-text">
+            <p>Have you spotted something that catches your interest?</p>
+            <h3>Feel free to reach out to us with your inquiries</h3>
+            <a href="" class="newsletter">Subscribe To Our News Letter</a>
+        </div>
+        <div class="footer-row">
+            <div class="footer-right">
+                <h1>Destinations</h1>
+                <p><a href="tanzania.html">Tanzania</a></p>
+                <p><a href="kenya.html">Kenya</a></p>
+                <p><a href="uganda.html">Uganda</a></p>
+                <p><a href="">Rwanda</a></p>
+                <p><a href="">Zanzibar</a></p>
+            </div>
+            <div class="footer-left">
+                <img src="myimages/africa.png" class="footer-img">
+                <h1>Get In Touch</h1>
+                <p>info@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>nicoleNL@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>+255755769498<i class="fa fa-phone" aria-hidden="true"></i></p>
+            </div>
+            <div class="footer-right">
+                <h1>HOME</h1>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Expeditions</a></p>
+                <p><a href="">Accommodation</a></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <p>Thank You For Visiting Our Website</p>
+        </div>
+    </section>
+</body>
+</html>
