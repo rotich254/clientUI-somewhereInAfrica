@@ -1,9 +1,10 @@
-function App() {
+import React from 'react';
+import Package from './components/packages/package';
+
+export default function App() {
   return (
-    <div className='App'>
-      <p>Dynamic logic here</p>
+    <div>
+      <Package />
     </div>
   );
 }
-
-export default App;

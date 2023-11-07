@@ -1,0 +1,25 @@
+.packages {
+  margin: 1rem;
+  .heading {
+    text-align: center;
+    h1 {
+      font-size: 30px;
+      font-weight: bolder;
+      margin-bottom: 1rem;
+    }
+    input[type='text'] {
+      display: block;
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 50%;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px;
+      outline: none;
+      background-color: #e6e6e6;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+}

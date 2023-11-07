@@ -1,0 +1,43 @@
+.wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+
+  .tour {
+    position: fixed;
+    left: 20%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  .tour-details,
+  .include,
+  .exclude {
+    background-color: #efefef;
+    padding: 1rem;
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .booking {
+    background-color: #deb887;
+    width: 130px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-size: 15px;
+    &:hover {
+      cursor: pointer;
+      background-color: #e6e6e6;
+    }
+  }
+}
