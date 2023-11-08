@@ -1,15 +1,9 @@
 import React from 'react';
 import styles from './tourDetails.module.scss';
-import { createPortal } from 'react-dom';
 
-export default function TourDetals() {
-  const DOMElement = document.getElementById('tourDetails');
-  if (!DOMElement) {
-    return null;
-  }
-
-  return createPortal(
-    <div className={styles.wrapper}>
+export default function TourDetals({ updateParentState }) {
+  return (
+    <div>
       <div className={styles.tour}>
         <div className={styles['tour-details']}>
           <p>Icon</p>
@@ -41,15 +35,9 @@ export default function TourDetals() {
           </div>
         </div>
         <div className={styles.booking}>
-          <h1>The Booking Form</h1>
-          <p>
-            Kindly fill the following form. Remember to provide accurate
-            information
-          </p>
           <div>Book Now</div>
         </div>
       </div>
-    </div>,
-    DOMElement
+    </div>
   );
 }
