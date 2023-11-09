@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './item.module.scss';
+import OpenModal from './modal/OpenModal';
+import Reserve from '../reserve/Reserve';
 
-export default function Item({ name, imageURL, description, price }) {
+export default function Item({
+  name,
+  imageURL,
+  description,
+  price,
+  includes,
+  excludes,
+  tourDetails,
+}) {
+  const [openModal, setOpenModal] = useState(false);
+  const [openReservationsForm, setOpenReservationsForm] = useState(false);
+
   return (
     <>
+      {openModal && (
+        <OpenModal
+          name={name}
+          tourDetails={tourDetails}
+          includes={includes}
+          excludes={excludes}
+          updateModalState={() => setOpenModal(false)}
+          updateReservationFormVisibility={() => setOpenReservationsForm(true)}
+        />
+      )}
+      {openReservationsForm && (
+        <Reserve
+          name={name}
+          updateModalState={() => setOpenReservationsForm(false)}
+        />
+      )}
+
       <div className={styles.item}>
         <div>
           <div>
@@ -14,7 +44,7 @@ export default function Item({ name, imageURL, description, price }) {
             <div className={styles.destination}>
               <h2>{name}</h2>
               <p>{description}</p>
-              <div>Read more</div>
+              <div onClick={() => setOpenModal(true)}>Read more</div>
             </div>
           </div>
         </div>

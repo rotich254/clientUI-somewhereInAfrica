@@ -3,11 +3,12 @@ import styles from './package.module.scss';
 import Item from '../item/Item';
 import fetchCollection from '../../lib/fetchCollection';
 import Pagination from '../pagination/Pagination';
+import { Notify } from 'notiflix';
 
 export default function Package() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState('');
-  const [loading, setLoadingStatus] = useState(false);
+  const [error, setError] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [packagesPerPage] = useState(10);
   const indexOfLastPackage = currentPage * packagesPerPage;
@@ -25,11 +26,14 @@ export default function Package() {
   useEffect(() => {
     async function fetchPackages() {
       try {
+        setError(false);
         const collectionName = 'packages';
         const collectionData = await fetchCollection(collectionName);
         setData(collectionData);
       } catch (error) {
         console.error('Error fetching data:', error);
+        setError(true);
+        Notify.failure('Error fetching data:', error);
       }
     }
 
@@ -53,15 +57,30 @@ export default function Package() {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
+      {error && (
+        <div className='bg-red-500 flex items-center justify-center p-4 max-w-[300px] text-white text-center'>
+          <p className='text-lg font-bold'>Error fetching data</p>
+        </div>
+      )}
       {data.length === 0 ? (
-        <p>No record found</p>
+        <div className='bg-[#f5deb3] flex items-center justify-center p-4 mt-4 max-w-[300px] text-center'>
+          <p className='text-lg font-bold'>No record found</p>
+        </div>
       ) : (
-        <div>
+        <div className='mt-4'>
           <div className={`${styles.item}`}>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
               {currentPackages.map((packageDetails) => {
-                const { id, name, price, description, imageURL } =
-                  packageDetails;
+                const {
+                  id,
+                  name,
+                  price,
+                  description,
+                  imageURL,
+                  includes,
+                  excludes,
+                  tourDetails,
+                } = packageDetails;
                 return (
                   <Item
                     key={id}
@@ -69,6 +88,9 @@ export default function Package() {
                     description={description}
                     price={price}
                     imageURL={imageURL}
+                    includes={includes}
+                    excludes={excludes}
+                    tourDetails={tourDetails}
                   />
                 );
               })}
