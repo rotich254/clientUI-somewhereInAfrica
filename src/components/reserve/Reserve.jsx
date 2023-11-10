@@ -2,20 +2,24 @@ import React, { useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import styles from './reserve.module.scss';
 import { RxCross2 } from 'react-icons/rx';
+import emailjs from '@emailjs/browser';
+import { Notify } from 'notiflix';
 
-const initialState = {
-  client_name: '',
-  email: '',
-  phone_number: '',
-  number_of_people: '',
-  number_of_days: '',
-  date: new Date().toISOString().substring(0, 10),
-};
-
-export default function Reserve({ updateModalState, name }) {
+export default function Reserve({ updateModalState, packageName }) {
   const form = useRef();
+  const initialState = {
+    destination: packageName,
+    client_name: '',
+    email: '',
+    phone_number: '',
+    number_of_people: '',
+    number_of_days: '',
+    date: new Date().toISOString().substring(0, 10),
+  };
   const [formData, setFormData] = useState(initialState);
+  const [loading, setLoading] = useState(false);
   const {
+    destination,
     client_name,
     email,
     phone_number,
@@ -31,9 +35,26 @@ export default function Reserve({ updateModalState, name }) {
 
   function submitFormData(e) {
     e.preventDefault();
+    setLoading(true);
 
-    try {
-    } catch (error) {}
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          Notify.success(`Reservations made. You will be contacted soon`);
+          setLoading(false);
+          setFormData(initialState);
+        },
+        (error) => {
+          Notify.error(error.text);
+          setLoading(false);
+        }
+      );
   }
 
   const DomElement = document.getElementById('bookingForm');
@@ -59,7 +80,8 @@ export default function Reserve({ updateModalState, name }) {
                 type='text'
                 readOnly
                 className={styles.package}
-                value={name}
+                name='destination'
+                value={destination}
               />
 
               <label>Full name</label>
@@ -122,7 +144,7 @@ export default function Reserve({ updateModalState, name }) {
               />
 
               <button type='submit' className={styles.submit}>
-                Submit
+                {loading ? `submitting...` : `Submit`}
               </button>
             </form>
           </div>

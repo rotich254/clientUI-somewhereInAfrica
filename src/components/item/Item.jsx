@@ -29,7 +29,7 @@ export default function Item({
       )}
       {openReservationsForm && (
         <Reserve
-          name={name}
+          packageName={name}
           updateModalState={() => setOpenReservationsForm(false)}
         />
       )}
