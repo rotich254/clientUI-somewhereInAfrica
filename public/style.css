@@ -58,8 +58,10 @@ nav .logo{
   border-radius: 3px;
   z-index: 3;
   cursor: pointer;
+  display: block;
 }
-#menubtn img{
+#menubtn img {
+  display: inline-block;
   width: 20px;
   margin-top: 15px;
 }
@@ -143,6 +145,7 @@ nav ul li a{
   right: 0;
   bottom: 0;
   z-index: -1;
+  max-width: none;
 }
 @media (min-aspect-ratio: 16/9){
   .back-video{
