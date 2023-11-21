@@ -112,12 +112,23 @@
                 <div class="about-content">
                     <h2> Embarking on an expedition to the ethereal realm of the Maasai Mara? We got you covered</h2>
                     <p><span style="font-weight: bolder;">Somewherein Africa</span> emerges as the best agency to take tourists to the Maasai Mara due to Our local expertise, personalized itineraries, commitment to responsible tourism, exceptional customer service, safety measures, and competitive pricing. Choosing Us guarantees an enriching and memorable journey to one of Africa's most captivating destinations.</p>
-                    <a href="" class="read-more">View Related Packages</a>
-                    <a href="" class="read-more">Book Now</a>
+                    <form id = "form">
+                        <Button type = "submit">view related package</Button>
+                    </form>
+                    <script>
+                        const form = document.getElementById('form');
+                        const dest = 'Maasai Mara';
+
+                        form.addEventListener('submit', function(e){
+                            const destination = dest.value;
+                            localStorage.setItem('thisdestination',destination.value);
+                        })
+                    </script>
                 </div>
             </div>
         </div>
     </section>
+   
 
     <section id = "footer">
         <div class="title-text">
