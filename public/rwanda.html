@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tanzaniastyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"  type = "text/css" href="mystyle/glider.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "kbanner">
+        <nav>
+            <img src="myimages/africa (2).png" class="logo">
+        </nav>
+        <div id="sidenav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourdestinations.html">DESTINATIONS</a></li>
+                <li><a href="food.html">CUISINE</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="iwrapper">
+            <div class="static-text">Explore Rwandas's:</div>   
+            <ul class = "dynamic-txts">
+                <li><span style="font-family:  'Marck Script', cursive ;">Mountain Gorilla</span></li>
+                <li><span style="font-family:  'Marck Script', cursive ;">Chimpanzees</span></li>
+                <li><span style="font-family:  'Marck Script', cursive ;">Lake Kivu</span></li>
+                <li><span style="font-family:  'Marck Script', cursive ;">Virunga Mountains</span></li>
+            </ul>
+        </div>
+        <div id="menubtn">
+            <img src="myimages/menu.png" id = "menu">
+        </div>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+            sidenav.style.right = "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = "myimages/close.png";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = "myimages/menu.png";
+                }
+            }
+        </script>
+    </section>
+
+    <section class = "facilities1">
+        <h1></h1>
+        <p><h1><span style="font-family: 'Marck Script', cursive ;"> Unveiling Nature's Beauty</span></h1>
+            <p>Discover the enchanting Volcanoes National Park, home to the majestic mountain gorillas. Trek through lush forests, accompanied by experienced guides, and witness these incredible creatures in their natural habitat. Rwanda's commitment to conservation and gorilla protection provides a unique and intimate experience with these remarkable primates</p>
+        <div class="roww">
+            <div class="facilities1-col">
+                <img src="images1/volcanonationalpark.jpg">
+                <h3>Volcanoes National Park </h3>
+                <p>A mesmerizing tapestry of raw untamed beauty. <span><a href="volcanoespark.html">Learn More</a></span></p>
+            </div>
+            <div class="facilities1-col">
+                <img src="images1/Akagera1.jpg">
+                <h3>Akagera National Park </h3>
+                <p>A sanctuary for diverse wildlife in the heart of Rwanda. <span><a href="lakeNaivasha.html">Learn More</a></span></p>
+            </div>
+            <div class="facilities1-col">
+                <img src="images1/rwanda1.jpg">
+                <h3>Kigali National Park </h3>
+                <p>Into the heart of Rwandan hospitality and natural charm.<span><a href="amboseli.html">Learn More</a></span></p>
+            </div>
+            
+       
+    </section>
+
+    <section id = "Accommodations">
+
+        <div class="heading">
+            <h1><span style="font-family: 'Marck Script', cursive ;">Accommodations In Rwanda</span></h1>
+            <p>Rwanda's diverse landscapes, from national parks to lakeshores, are complemented by a range of accommodation options that cater to various preferences and budgets. Whether you seek luxury, eco-friendly experiences, or budget-friendly stays, Rwanda provides a chance to immerse yourself in its unique culture and natural beauty.</p>
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <img  class = "card-image" src ="images1/kigaliserena.jpg" alt="GIRAFFE MANOR HOTEL">
+                    <div class="card-content">
+                        <h1 class = "Card-header">Kigali Serena Hotel</h1>
+                        <p class = card-text>
+                            
+                            Situated on a picturesque boulevard in Kigali, the luxurious Kigali Serena Hotel boasts a five-star experience. The hotel is designed around a sophisticated granite atrium that highlights the richness of Rwandese cultural art. The ambiance is both laid-back and refined, with notable features including an Executive Lounge and Bar that leads to a spacious sundeck overlooking the recently upgraded swimming pool. Providing a scenic view of the pool as well, the popular Milima Restaurant presents an extensive selection of buffet options throughout the day. For a more relaxed setting, the Sokoni Café offers seating options both indoors and outdoors, alongside the pool.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img  class = "card-image" src ="images1/igangiparkview.jpeg" alt="NAIBOR CAMP">
+                    <div class="card-content">
+                        <h1 class = "Card-header"> Ingagi Park View Lodge</h1>
+                        <p class = card-text>
+                            
+                            Ingagi Park View Lodge provides breathtaking and unobstructed vistas of the Virunga Mountains, the habitat of the endangered Mountain Gorillas. Nestled at the base of the Virunga Volcanoes, we are conveniently located just a short distance from the starting point for gorilla tracking. Renowned for our warm hospitality and attentive service, we take pride in our stunning natural surroundings. Our Africa-inspired lodge is designed with eco-friendliness in mind, constructed using sustainable local materials wherever possible. Each cottage features a private veranda and expansive windows, with some offering stunning panoramic views of the mountains and the flourishing natural landscape.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+    </section>
+
+   
+
+    </section>
+    <section id = "footer">
+        <div class="title-text">
+            <p>Have you spotted something that catches your interest?</p>
+            <h3>Feel free to reach out to us with your inquiries</h3>
+            <a href="" class="newsletter">Subscribe To Our News Letter</a>
+        </div>
+        <div class="footer-row">
+            <div class="footer-right">
+                <h1>Destinations</h1>
+                <p><a href="tanzania.html">Tanzania</a></p>
+                <p><a href="kenya.html">Kenya</a></p>
+                <p><a href="uganda.html">Uganda</a></p>
+                <p><a href="">Rwanda</a></p>
+                <p><a href="">Zanzibar</a></p>
+            </div>
+            <div class="footer-left">
+                <img src="myimages/africa.png" class="footer-img">
+                <h1>Get In Touch</h1>
+                <p>info@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>nicoleNL@Somewhereinafrica.co.tz<i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                <p>+255755769498<i class="fa fa-phone" aria-hidden="true"></i></p>
+            </div>
+            <div class="footer-right">
+                <h1>HOME</h1>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Expeditions</a></p>
+                <p><a href="">Accommodation</a></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <p>Thank You For Visiting Our Website</p>
+        </div>
+    </section>
+
+
+    <script src="js/glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+  slidesToShow: 4,
+  dots: '#dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 1200,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 4,
+        slidesToScroll: 2,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 304,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 0,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+    </script>
+</body>
+</html>
