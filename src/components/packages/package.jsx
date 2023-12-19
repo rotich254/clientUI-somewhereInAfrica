@@ -10,7 +10,7 @@ export default function Package() {
   const [search, setSearch] = useState('');
   const [error, setError] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [packagesPerPage] = useState(10);
+  const [packagesPerPage] = useState(15);
   const indexOfLastPackage = currentPage * packagesPerPage;
   const indexOfFirstPackage = indexOfLastPackage - packagesPerPage;
   const currentPackages = data.slice(indexOfFirstPackage, indexOfLastPackage);
