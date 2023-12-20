@@ -43,7 +43,7 @@ export default function Item({
             </div>
             <div className={styles.destination}>
               <h2>{name}</h2>
-              <p>{description}</p>
+              <p style={{ whiteSpace: 'pre-wrap' }}>{description}</p>
               <div onClick={() => setOpenModal(true)}>Read more</div>
             </div>
           </div>

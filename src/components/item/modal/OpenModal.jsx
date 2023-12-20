@@ -36,11 +36,9 @@ export default function OpenModal({
           <div className={styles['tour-details']}>
             <h2>{name}</h2>
             <h1>Tour details</h1>
-            <p>{tourDetails}</p>
+            <p style={{ whiteSpace: 'pre-wrap' }}>{tourDetails}</p>
           </div>
-          <div
-            className={`${styles['package-list']} grid grid-cols-1 md:grid-cols-2 gap-4`}
-          >
+          <div className={`${styles['package-list']} grid grid-cols-1 gap-4`}>
             <div>
               <h1>Package Includes</h1>
               <ul>
