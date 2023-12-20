@@ -51,8 +51,9 @@ export default function Reserve({ updateModalState, packageName }) {
           setFormData(initialState);
         },
         (error) => {
-          Notify.error(error.text);
+          Notify.failure('Oops! An error occured. Try again');
           setLoading(false);
+          console.log(error);
         }
       );
   }
