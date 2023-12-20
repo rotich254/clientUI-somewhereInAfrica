@@ -50,12 +50,13 @@ nav .logo{
 #helpbtn{
   width: 90px;
   height: 60px;
-  color: #fff;
-  background: rgb(52, 243, 26);
+  color: #11ec1c;
+  background: #000;
   text-align: center;
   position: fixed;
   right: 30px;
-  bottom: 120px;
+  opacity: 86%;
+  bottom: 80  px;
   border-radius: 3px;
   z-index: 3;
   cursor: pointer;
@@ -67,7 +68,7 @@ nav .logo{
 }
 #helpbtn a{
   text-decoration: none;
-  color: whitesmoke;
+  color: red;
   font-size: smaller;
   align-items: center;
   font-weight: bolder;
@@ -1524,4 +1525,11 @@ main p{
 
 .back-button:hover {
   background-color: wheat; /* Darker Blue Color on Hover */
+}
+.aboutusp p{
+  text-align: left;
+  margin-bottom: 20px;
+}
+#general{
+  background: #fff;
 }
