@@ -32,7 +32,7 @@ nav{
   justify-content: space-between;
 }
 nav .logo{
-  width: 80px;
+  width: 60px;
   position: fixed;
   margin-top: 50px;
   z-index: 2;
@@ -50,13 +50,13 @@ nav .logo{
 #helpbtn{
   width: 90px;
   height: 61px;
-  color: #11ec1c;
-  background: #000;
+  color: #fff;
+  background: orange;
   text-align: center;
   position: fixed;
   right: 30px;
   opacity: 86%;
-  bottom: 80  px;
+  bottom: 80px;
   border-radius: 3px;
   z-index: 3;
   cursor: pointer;
@@ -66,16 +66,39 @@ nav .logo{
   border-radius: 50%;
   align-items: center;
 }
+#packagesbtn{
+  width: 200px;
+  height: 60px;
+  color: indigo;
+  background: white;
+  text-align: center;
+  position: absolute;
+  right: 590px;
+  opacity: 86%;
+  bottom: 120px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: small;
+  font-weight: bolder;
+}
+#packagesbtn a{
+  text-decoration: none;
+  color: indigo;
+  font-size: large;
+  margin-top: 12px;
+  font-weight: bolder;
+  display: inline-block;
+}
 #helpbtn a{
   text-decoration: none;
-  color: red;
+  color: #efefef;
   font-size: smaller;
   align-items: center;
   font-weight: bolder;
 }
 #menubtn{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: burlywood;
   text-align: center;
   position: fixed;
@@ -88,12 +111,12 @@ nav .logo{
 }
 #menubtn img {
   display: inline-block;
-  width: 20px;
-  margin-top: 15px;
+  width: 13px;
+  margin-top: 12px;
 }
 nav ul li{
   list-style: none;
-  margin: 50px 20px;
+  margin: 25px 10px;
 }
 nav ul li a{
   text-decoration: none;
@@ -103,18 +126,16 @@ nav ul li a{
   text-align: center;
 }
 .content h1{
-  font-size: 100px;
-  color:transparent;
-  -webkit-text-stroke: 1px #fff;
+  font-size: 60px;
+  color:#fff;
   font-weight: 600;
-  font-family: 'Kaushan Script', cursive;
+  /* font-family: 'Kaushan Script', cursive; */
   transition: 0.9s;
 }
 .herob h1{
   padding: 120px;
   font-size: 120px;
   color:transparent;
-  -webkit-text-stroke: 1px #fff;
   font-weight: 300;
   font-family: 'Kaushan Script', cursive;
   transition: 0.9s;
@@ -122,17 +143,17 @@ nav ul li a{
 .content h3{
   color:#fff;
   font-size: 30px;
-  font-family: cursive;
+  font-family:cursive;
 }
 .content h1:hover{
-  -webkit-text-stroke: 1px #fff;
   color: #fff;
 }
 .content a{
   text-decoration: none;
   display: inline-block;
-  color: #fff;
-  font-size: 24px;
+  color: indigo;
+  font-size: 20px;
+  font-weight: bolder;
   border: 2px solid #fff;
   padding: 14px 70px;
   border-radius: 50px;
@@ -142,7 +163,7 @@ nav ul li a{
   transition: color 0.9s;
 }
 .content a span{
-  width: 0;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -164,6 +185,10 @@ nav ul li a{
   }
   .content h3{
       font-size: 24px;
+  }
+  #packagesbtn{
+    right: 85px;
+    bottom: 200px;
   }
 }
 .back-video{
@@ -187,7 +212,7 @@ nav ul li a{
 }
 
 .about-us{
-  background-color: #fff;
+  background-color:white;
 }
 .heading{
   width: 90%;
@@ -320,14 +345,7 @@ nav ul li a{
   justify-content: center;
   min-height: 30Vh;
 }
-.slider-wrapper .image-list{
-  display: grid;
-  gap: 18px;
-  font-size: 0;
-  overflow-x: auto;
-  scrollbar-width:none;
-  grid-template-columns: repeat(10, 1fr);
-}
+
 .slider-wrapper .image-list ::-webkit-scrollbar{
   display: none;
 }
@@ -353,13 +371,12 @@ nav ul li a{
 }
 .title-text p{
   margin: auto;
-  font-size: 30px;
+  font-size: 24px;
   color:#000;
   font-weight: bold;
   position: relative;
   z-index: 1;
   display: inline-block;
-  font-family: 'Kaushan Script', cursive;
 }
 .title-text .newsletter{
   margin-top: 120px;
@@ -461,7 +478,7 @@ nav ul li a{
 #banner{
   width: 100%;
   height: 100vh;
-  background: url(myimages/desination1.png);
+  background: url(myimages/lakeNaivasha1.jpg);
   position: relative;
   padding: 0 5%;
   display: flex;
@@ -508,25 +525,6 @@ nav ul li a{
   margin-top: 80px;
   text-align: center;
 
-}
-#sliding .mycontainer{
-  width: 85vmin;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  margin-top:100px;
-  overflow: hidden;
-  border: 20px solid bisque;
-  border-radius: 10px;
-  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
-}
-.wrapper{
-  width: 100%;
-  display: flex;
-  animation: slide 10s infinite;
-}
-.wrapper img{
-  width: 100%;
 }
 .row{
   margin-top: 5px;
@@ -1489,7 +1487,7 @@ button:hover{
 .containerty{
   max-width: 800px;
   margin: 20px auto;
-  background-color: #fff; /* White Content Background */
+  background-color: #fff; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1498,7 +1496,7 @@ button:hover{
   text-align: center;
 }
 .containerty h1 {
-    color: wheat; /* Fade Blue Color */
+    color: wheat; 
 }
 main {
   margin-top: 20px;
@@ -1517,19 +1515,26 @@ main p{
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background-color: burlywood; /* Fade Blue Color */
+  background-color: burlywood;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .back-button:hover {
-  background-color: wheat; /* Darker Blue Color on Hover */
+  background-color: wheat;
 }
 .aboutusp p{
   text-align: left;
   margin-bottom: 20px;
 }
-#general{
-  background: #fff;
+.companylogo img {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .companylogo img {
+      max-width: 100%;
+      height: auto;
+  }
 }
