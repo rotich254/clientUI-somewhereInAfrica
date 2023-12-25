@@ -16,6 +16,12 @@
             <!-- Add more instructions as needed -->
         </main>
         <a href="javascript:history.go(-1)" class="back-button">Back</a>
-    </div>
+            <button id ="goToPackagesBtn">Go To Packages</button>
+        <script>
+        document.getElementById('goToPackagesBtn').addEventListener('click', function() {
+          // Navigate to index.html
+          window.location.href = 'index.html#Packages';
+        });
+      </script>
 </body>
 </html>
