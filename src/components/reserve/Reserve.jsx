@@ -121,6 +121,7 @@ export default function Reserve({ updateModalState, packageName }) {
                 required
                 placeholder='How many people?'
                 name='number_of_people'
+                min={1}
                 value={number_of_people}
                 onChange={(e) => processFormInputData(e)}
               />
@@ -131,6 +132,7 @@ export default function Reserve({ updateModalState, packageName }) {
                 required
                 placeholder='Enter number of days'
                 name='number_of_days'
+                min={1}
                 value={number_of_days}
                 onChange={(e) => processFormInputData(e)}
               />
@@ -141,6 +143,7 @@ export default function Reserve({ updateModalState, packageName }) {
                 required
                 value={date}
                 name='date'
+                min={new Date().toISOString().split('T')[0]}
                 onChange={(e) => processFormInputData(e)}
               />
 
