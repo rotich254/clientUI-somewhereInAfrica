@@ -16,8 +16,10 @@ export default function Package() {
   const currentPackages = data.slice(indexOfFirstPackage, indexOfLastPackage);
 
   function filterPackageBySearch(data, search) {
-    const searchedPackage = data.filter((item) =>
-      item.name.toLowerCase().includes(search.toLowerCase())
+    const searchedPackage = data.filter(
+      (item) =>
+        item.name.toLowerCase().includes(search.toLowerCase()) ||
+        item.description.toLowerCase().includes(search.toLowerCase())
     );
 
     return searchedPackage;
